@@ -9,10 +9,10 @@ const gradientButtonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-gradient-to-r from-cyan-400 to-blue-500 text-white shadow-glow-cyan hover:shadow-glow-cyan hover:scale-105",
+          "bg-gradient-to-r from-purple-500 to-purple-700 text-white shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 hover:scale-105",
         outline:
-          "border-2 border-cyan-400 bg-transparent text-cyan-400 hover:bg-cyan-400/10 hover:scale-105",
-        ghost: "text-cyan-400 hover:bg-cyan-400/10",
+          "border-2 border-purple-400 bg-transparent text-purple-300 hover:bg-purple-500/10 hover:scale-105",
+        ghost: "text-purple-400 hover:bg-purple-500/10",
         purple:
           "bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-glow-purple hover:shadow-glow-purple hover:scale-105",
       },

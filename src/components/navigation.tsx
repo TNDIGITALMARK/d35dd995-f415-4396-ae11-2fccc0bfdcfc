@@ -24,45 +24,22 @@ export function Navigation() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-[#1A0B2E]/95 backdrop-blur-lg shadow-lg"
+          ? "bg-black/80 backdrop-blur-xl shadow-lg shadow-purple-500/10 border-b border-purple-900/20"
           : "bg-transparent"
       )}
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-400 to-purple-500 flex items-center justify-center shadow-glow-cyan group-hover:scale-110 transition-transform">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                className="w-6 h-6 text-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2L2 7L12 12L22 7L12 2Z"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M2 17L12 22L22 17"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M2 12L12 17L22 12"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="w-12 h-12 relative group-hover:scale-105 transition-transform">
+              <img
+                src="/generated/aurora-ai-icon.png"
+                alt="Aurora AI Logo"
+                className="w-full h-full object-contain drop-shadow-[0_0_8px_rgba(124,58,237,0.5)]"
+              />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+            <span className="text-xl font-bold bg-gradient-to-r from-purple-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">
               AURORA AI
             </span>
           </Link>
@@ -71,19 +48,19 @@ export function Navigation() {
           <div className="hidden md:flex items-center gap-8">
             <Link
               href="/"
-              className="text-gray-200 hover:text-cyan-400 transition-colors font-medium"
+              className="text-gray-300 hover:text-purple-400 transition-colors font-medium"
             >
               Home
             </Link>
             <Link
               href="/demo"
-              className="text-gray-200 hover:text-cyan-400 transition-colors font-medium"
+              className="text-gray-300 hover:text-purple-400 transition-colors font-medium"
             >
               Demo
             </Link>
             <Link
               href="/features"
-              className="text-gray-200 hover:text-cyan-400 transition-colors font-medium"
+              className="text-gray-300 hover:text-purple-400 transition-colors font-medium"
             >
               Features
             </Link>
@@ -92,7 +69,7 @@ export function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-gray-200 hover:text-cyan-400 transition-colors"
+            className="md:hidden p-2 text-gray-300 hover:text-purple-400 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -106,21 +83,21 @@ export function Navigation() {
             <div className="flex flex-col gap-4">
               <Link
                 href="/"
-                className="text-gray-200 hover:text-cyan-400 transition-colors font-medium py-2"
+                className="text-gray-300 hover:text-purple-400 transition-colors font-medium py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/demo"
-                className="text-gray-200 hover:text-cyan-400 transition-colors font-medium py-2"
+                className="text-gray-300 hover:text-purple-400 transition-colors font-medium py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Demo
               </Link>
               <Link
                 href="/features"
-                className="text-gray-200 hover:text-cyan-400 transition-colors font-medium py-2"
+                className="text-gray-300 hover:text-purple-400 transition-colors font-medium py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Features
