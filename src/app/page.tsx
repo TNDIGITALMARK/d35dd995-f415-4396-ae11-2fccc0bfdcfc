@@ -275,14 +275,14 @@ export default function HomePage() {
             {/* Logo Column */}
             <div className="md:col-span-1">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 relative">
+                <div className="w-10 h-10 relative">
                   <img
-                    src="/generated/aurora-ai-icon.png"
+                    src="/generated/aurora-ai-icon-minimal.png"
                     alt="Aurora AI Logo"
-                    className="w-full h-full object-contain drop-shadow-[0_0_8px_rgba(124,58,237,0.5)]"
+                    className="w-full h-full object-contain drop-shadow-[0_0_12px_rgba(124,58,237,0.6)]"
                   />
                 </div>
-                <span className="text-lg font-bold bg-gradient-to-r from-purple-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">
+                <span className="text-lg font-bold bg-gradient-to-r from-purple-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent tracking-wide">
                   AURORA AI
                 </span>
               </div>
